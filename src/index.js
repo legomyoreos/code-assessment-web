@@ -8,6 +8,8 @@ import reducer from './reducers'
 import { getAllProducts } from './actions'
 import App from './containers/App'
 
+import 'normalize.css';
+
 const middleware = [ thunk ];
 if (process.env.NODE_ENV !== 'production') {
   middleware.push(createLogger());

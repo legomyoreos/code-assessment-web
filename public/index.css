@@ -1,0 +1,42 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Arial', 'sans-serif';
+	background: #F4F5F7;
+}
+
+#appContainer {
+	margin: 0 auto;
+	max-width: 1120px;
+	padding: 60px 80px;
+}
+
+h2 {
+	font-size: 51px;
+	font-weight: 400;
+	margin: 0;
+}
+
+header {
+	padding-bottom: 30px;
+	border-bottom: #DADADA 1px solid;
+}
+
+header,
+#cart_status {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#cart_status > img {
+	margin-right: 10px;
+}
+
+#cart_status > p {
+	color: #292929;
+	font-size: 14px;
+}
+#cart_status > p:hover {
+	color: #407FC0;
+	cursor: pointer;
+}
