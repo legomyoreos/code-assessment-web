@@ -7,7 +7,7 @@ import cartDefault from '../img/cart_default.png'
 const App = () => (
   <div id="appContainer">
   	<header>
-  		<h2 >Acme Store</h2>
+  		<h2>Acme Store</h2>
   		<div id="cart_status">
   			<img src={cartDefault} alt='cart empty'/>
   			<p>Your cart is empty</p>
