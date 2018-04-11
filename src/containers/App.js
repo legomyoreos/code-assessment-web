@@ -14,7 +14,7 @@ const App = () => (
   		</div>
   	</header>
     <ProductsContainer />
-    <hr/>
+
     <CartContainer />
   </div>
 )

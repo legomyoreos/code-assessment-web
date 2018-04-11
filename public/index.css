@@ -18,7 +18,6 @@ body {
 
 h2 {
 	font-size: 51px;
-	font-weight: 400;
 	margin: 0;
 }
 
@@ -62,6 +61,10 @@ header,
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
+}
+
+.itemInfo {
+	margin-bottom: 80px;
 }
 
 .singleItem {
@@ -110,6 +113,215 @@ header,
 	height: 100%;
 	object-fit: cover;
 }
+
+/* CART MODAL */
+/* Modal styled but haven't figured out how to show & hide on click using React */
+
+.cartModal {
+	display: none;
+	background: #fff;
+	max-width: 780px;
+	padding: 60px 80px;
+	margin: 0 auto;
+}
+
+.cartModal > img {
+	float: right;
+	margin: -30px -50px;
+}
+
+.cartModal > h3 {
+	padding-bottom: 30px;
+	border-bottom: 1px solid #E8E8E8;
+}
+
+#emptyCart {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 150px auto;
+}
+
+#emptyCart > div {
+	max-width: 50%;
+	display: flex;
+    flex-direction: column;
+}
+
+#emptyCart_image {
+	align-self: center;
+}
+
+#emptyCart p {
+	font-size: 21px;
+	color: #919191;
+	text-align: center;
+}
+
+
+
+/* MEDIA QUERIES */
+/* I was exploring using the react container query library but couldn't properly implement. I am sticking to using regular media queries as of now */
+
+@media screen and (max-width: 768px) {
+
+	#appContainer {
+		max-width: 668px;
+		padding: 40px 50px;
+	}
+
+	header {
+		padding-bottom: 20px;
+	}
+
+  	h2 {
+		font-size: 38px;
+	}
+
+	h3 {
+		font-size: 28px;
+	}
+
+	.singleProductContainer {
+		margin-top: 20px;
+	}
+
+	.itemInfo {
+		margin-bottom: 45px;
+	}
+
+	.singleItem {
+		padding: 30px 40px;
+	}
+
+	.itemInventory > p {
+		font-size: 12px;
+		margin-top: 10px;
+	}
+}
+
+
+@media screen and (max-width: 475px) {
+	#appContainer {
+		max-width: 280px;
+		padding: 30px 20px;
+	}
+
+	header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	#cart_status {
+		margin-top: 5px;
+	}
+
+	#cart_status > p {
+		margin: 0;
+	}
+
+	h2 {
+		font-size: 28px;
+	}
+
+	h3 {
+		font-size: 21px;
+	}
+
+	.singleProductContainer {
+		flex-direction: column;
+	}
+
+	.imgContainer {
+		width: auto;
+    	height: 211px;
+	}
+
+	.singleItem {
+		width: auto;
+		padding: 30px 20px;
+	}
+
+	.itemInfo {
+		margin-bottom: 25px;
+	}
+
+	.itemPrice > p {
+		font-size: 16px;
+	}
+
+	.addButton {
+		font-size: 13px;
+		padding: 8px 16px;
+		text-transform: uppercase;
+		align-self: flex-start;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

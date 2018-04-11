@@ -2,6 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Product from './Product'
 
+import cartDisabledLarge from '../img/cart_disabled_large.png'
+import closeIconLarge from '../img/close_icon_large.png'
+
+
 const Cart  = ({ products, total, onCheckoutClicked }) => {
   const hasProducts = products.length > 0
   const nodes = hasProducts ? (
@@ -14,15 +18,24 @@ const Cart  = ({ products, total, onCheckoutClicked }) => {
       />
     )
   ) : (
-    <em>Please add some products to cart.</em>
+    <div id="emptyCart">
+      <div>
+        <div id="emptyCart_image">
+          <img src={cartDisabledLarge} alt="cart disbled"/>
+        </div>
+        <p>Please add some products <br/>to your cart.</p>
+      </div>
+    </div>
   )
 
   return (
-    <div>
+    <div className="cartModal">
+      <img src={closeIconLarge}/>
       <h3>Your Cart</h3>
       <div>{nodes}</div>
       <p>Total: &#36;{total}</p>
-      <button onClick={onCheckoutClicked}
+      <button className="addButton" 
+        onClick={onCheckoutClicked}
         disabled={hasProducts ? '' : 'disabled'}>
         Checkout
       </button>
