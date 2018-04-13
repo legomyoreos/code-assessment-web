@@ -240,6 +240,10 @@ header,
     	height: 211px;
 	}
 
+	.imgContainer > img {
+		border-radius: 10px 10px 0 0;
+	}
+
 	.singleItem {
 		width: auto;
 		padding: 30px 20px;

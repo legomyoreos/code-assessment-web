@@ -21,7 +21,7 @@ const Cart  = ({ products, total, onCheckoutClicked }) => {
     <div id="emptyCart">
       <div>
         <div id="emptyCart_image">
-          <img src={cartDisabledLarge} alt="cart disbled"/>
+          <img src={cartDisabledLarge} alt="cart disabled"/>
         </div>
         <p>Please add some products <br/>to your cart.</p>
       </div>
@@ -30,7 +30,7 @@ const Cart  = ({ products, total, onCheckoutClicked }) => {
 
   return (
     <div className="cartModal">
-      <img src={closeIconLarge}/>
+      <img src={closeIconLarge} alt="close modal icon"/>
       <h3>Your Cart</h3>
       <div>{nodes}</div>
       <p>Total: &#36;{total}</p>
