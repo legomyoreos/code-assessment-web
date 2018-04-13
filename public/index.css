@@ -56,6 +56,7 @@ header,
 	background: #fff;
 	display: flex;
 	margin-top: 30px;
+	border-radius: 10px;
 }
 
 .itemInfoPriceContainer {
@@ -103,12 +104,14 @@ header,
 
 .imgContainer {
 	width: 45%;
+	height: auto;
 }
 
 .imgContainer > img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	border-radius: 10px 0 0 10px;
 }
 
 
